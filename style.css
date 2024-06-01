@@ -1,0 +1,192 @@
+body{
+    padding : 100px 0px 0px 0px;
+    margin : 0;
+    font-family:"Poppins", sans-serif;;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 5px 30px 5px 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    z-index: 100; 
+    margin-bottom: 20px;
+}   
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-menu-toggle{
+    display: none;
+}
+/*MEDIA QUERY*/
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display : none;
+    }
+    .header img{
+        display: none;
+    }
+    .header h2{
+        display: none;
+    }
+}
+/*SIDE NAV BAR*/
+.side-navbar{
+    background-color: black;
+    color: white;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    padding: 20px;
+    transition: 0.7s;
+    z-index: 101;
+}
+.side-navbar-link{
+    margin-bottom : 50px;
+}
+.side-navbar-link a{
+    text-decoration: none;
+    color: white;
+}
+/*MEDIA QUERY*/
+@media screen and (min-width:701px) {
+    .side-navbar{
+        display: none;
+    }
+}
+/*HEADER*/
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+    margin: 20px;
+}
+.header img{
+    width: 250px;
+    height: 300px;
+}
+
+.header-button{
+    padding: 10px 15px 10px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+/*SERVICE*/
+.service{
+    padding: 100px;
+}
+.service-container-2{
+    display: flex;
+    gap: 15px;
+}
+.services{
+    width: 25%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.services h4{
+    font-family:'Imbue', serif;
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+/*DESIGNER COLLECTIONS*/
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+    margin-bottom: 20px;
+}
+.new-arrival-container img{
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.new-arrival-container button{
+    padding : 15px 20px 15px 20px;
+    background-color: rgba(0, 0, 0, 0.549);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    top : 40%;
+    left : 25%;
+    cursor: pointer; 
+}
+.new-arrival-container button:hover{
+    background-color: black;
+}
+/*NEWSLETTER*/
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news input{
+    padding: 10px;
+    width: 20vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid black 3px;
+}
+.news button{
+    background-color: black;
+    color: white;
+    padding: 12px 15px 10px 15px;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 50px 20px 50px 50px;
+}
+.footer-icon-container i{
+    padding-right: 10px;
+}
+
+@media screen and (max-width:1300px) {
+    .service{
+        padding: 50px;
+        position: relative;
+    }
+    .service-container-2{
+        display: inline-block;
+        gap: 30px;
+        margin-right: 50px;
+    }
+    .services{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
